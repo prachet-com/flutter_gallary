@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gallary/layout/expansionPanelDemo.dart';
 import 'package:flutter_gallary/layout/scrollbarDemo.dart';
 
 class HomepageScreen extends StatelessWidget {
@@ -24,6 +25,7 @@ class HomepageScreen extends StatelessWidget {
       body: ListView(
         children: [
           buildTile(context, "Scrollbar", ScrollbarDemo.routeName),
+          buildTile(context, "Expansion Panel", ExpansionPanelDemo.routeName),
           // buildTile("Something else"),
         ],
       ),

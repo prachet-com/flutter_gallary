@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gallary/homepage.dart';
+import 'package:flutter_gallary/layout/expansionPanelDemo.dart';
 import 'package:flutter_gallary/layout/scrollbarDemo.dart';
 
 void main() {
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
       home: HomepageScreen(),
       routes: {
         ScrollbarDemo.routeName: (ctx) => ScrollbarDemo(),
+        ExpansionPanelDemo.routeName: (ctx) => ExpansionPanelDemo()
       },
     );
   }
