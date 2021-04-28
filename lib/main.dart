@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gallary/buttons/buttons-demo.dart';
 import 'package:flutter_gallary/homepage.dart';
 import 'package:flutter_gallary/layout/expansionPanelDemo.dart';
 import 'package:flutter_gallary/layout/scrollbarDemo.dart';
@@ -24,11 +25,60 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            elevation: 8,
+            primary: Color.fromRGBO(145, 179, 50, 1),
+            onPrimary: Colors.white,
+            shadowColor: Color.fromRGBO(231, 252, 179, 1),
+            shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(30.0),
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 8),
+            textStyle: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            primary: Color.fromRGBO(145, 179, 50, 1),
+            backgroundColor: Color.fromRGBO(231, 252, 179, 1),
+            shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(30.0),
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 8),
+            textStyle: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w400,
+            ),
+            side: BorderSide(
+              width: 1.0,
+              color: Color.fromRGBO(145, 179, 50, 1),
+            ),
+          ),
+        ),
+        textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(
+            primary: Color.fromRGBO(145, 179, 50, 1),
+            backgroundColor: Color.fromRGBO(231, 252, 179, 1),
+            shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(30.0),
+            ),
+            padding: EdgeInsets.symmetric(horizontal: 50, vertical: 8),
+            textStyle: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w400,
+            ),
+          )
+        )
       ),
       home: HomepageScreen(),
       routes: {
         ScrollbarDemo.routeName: (ctx) => ScrollbarDemo(),
-        ExpansionPanelDemo.routeName: (ctx) => ExpansionPanelDemo()
+        ExpansionPanelDemo.routeName: (ctx) => ExpansionPanelDemo(),
+        ButtonsDemoScreen.routeName: (ctx) => ButtonsDemoScreen(),
       },
     );
   }
