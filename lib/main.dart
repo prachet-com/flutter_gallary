@@ -3,6 +3,7 @@ import 'package:flutter_gallary/buttons/buttons-demo.dart';
 import 'package:flutter_gallary/homepage.dart';
 import 'package:flutter_gallary/layout/expansionPanelDemo.dart';
 import 'package:flutter_gallary/layout/scrollbarDemo.dart';
+import 'package:flutter_gallary/layout/youtube_layout.dart';
 
 void main() {
   runApp(MyApp());
@@ -77,8 +78,9 @@ class MyApp extends StatelessWidget {
       home: HomepageScreen(),
       routes: {
         ScrollbarDemo.routeName: (ctx) => ScrollbarDemo(),
-        ExpansionPanelDemo.routeName: (ctx) => ExpansionPanelDemo(),
+        // ExpansionPanelDemo.routeName: (ctx) => ExpansionPanelDemo(),
         ButtonsDemoScreen.routeName: (ctx) => ButtonsDemoScreen(),
+        YoutubeAppDemo.routeName:(ctx)=>YoutubeAppDemo()
       },
     );
   }

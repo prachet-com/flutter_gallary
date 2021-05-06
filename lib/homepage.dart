@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gallary/buttons/buttons-demo.dart';
 import 'package:flutter_gallary/layout/expansionPanelDemo.dart';
 import 'package:flutter_gallary/layout/scrollbarDemo.dart';
+import 'package:flutter_gallary/layout/youtube_layout.dart';
 
 class HomepageScreen extends StatelessWidget {
   buildTile(BuildContext context, String componentName, String route) {
@@ -28,6 +29,7 @@ class HomepageScreen extends StatelessWidget {
           buildTile(context, "Scrollbar", ScrollbarDemo.routeName),
           // buildTile(context, "Expansion Panel", ExpansionPanelDemo.routeName),
           buildTile(context, "Prachet Buttons", ButtonsDemoScreen.routeName),
+          buildTile(context, "Youtube", YoutubeAppDemo.routeName),
           // buildTile("Something else"),
         ],
       ),
